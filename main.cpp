@@ -4,7 +4,11 @@
 
 #include "LoungeVCS.hpp"
 
-void argparse(vecter<std::string>);
+void argparse(std::vector<std::string> args){
+    for(int x = 0; x <= args.size(); x++){
+        if(args[x] == "-h" || args[x] == "--help") std::cout<<"This is a help message...\n";
+    }
+}
 
 int main(int argc, char* argv[]) {
     std::vector<std::string> args (argv, argv + argc);
@@ -15,10 +19,4 @@ int main(int argc, char* argv[]) {
     for (auto const& arg : args) {
         std::cout << arg << '\n';
     }
-}
-
-void argparse(vector<std::string> args){
-	for(int x = 0; x <= args.size(); x++){
-		if(args[x] == "-h" || args[x] == "--help") std::cout<<"This is a help message...\n";
-	}
 }
