@@ -6,7 +6,7 @@
 
 void argparse(std::vector<std::string> args){
     for(auto &x : args){
-        if(x == "-h" || x == "--help") std::cout<<"This is a help message...\n";
+        if(x == "-h" || x == "--help") std::cout << "[Lounge VCS v0.0.0.0] This is a help message...\n";
     }
 }
 
