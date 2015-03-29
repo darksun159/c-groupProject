@@ -5,14 +5,14 @@
 #include "LoungeVCS.hpp"
 
 void argparse(std::vector<std::string> args){
-    for(int x = 0; x <= args.size(); x++){
-        if(args[x] == "-h" || args[x] == "--help") std::cout<<"This is a help message...\n";
+    for(auto &x : args){
+        if(x == "-h" || x == "--help") std::cout<<"This is a help message...\n";
     }
 }
 
 int main(int argc, char* argv[]) {
     std::vector<std::string> args (argv, argv + argc);
-	argparse(args);
+    argparse(args);
 
     std::cout << "Lounge VCS v0.0.0.0" << '\n';
 
