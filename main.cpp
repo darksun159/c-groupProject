@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
     }
 }
 
-void argparse(vecter<std::string> args){
+void argparse(vector<std::string> args){
 	for(int x = 0; x <= args.size(); x++){
 		if(args[x] == "-h" || args[x] == "--help") std::cout<<"This is a help message...\n";
 	}
