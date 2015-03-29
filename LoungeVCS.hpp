@@ -18,6 +18,12 @@ namespace Lounge {
 
     public:
         // TODO
+        void loadIndex();
+
+        // TODO
+        void saveIndex();
+
+        // TODO
         /// Initializes the vcs dir 
         void init();
 
