@@ -1,6 +1,4 @@
-# c-groupProject
-a project i am doing with some random people i found on the internet
+# c++-groupProject
 
-pretty much sums it up...
+A version control system I'm working on with some cool people on the internet that I found.
 
-Nooble was here.
