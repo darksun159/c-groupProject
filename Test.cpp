@@ -28,7 +28,7 @@ FileStatus getFileStatus(std::string const& path) {
         return FileStatus::Directory;
     }
     else {
-        printf("%s is no directory\n", path.c_str());
+        printf("%s is not a directory\n", path.c_str());
         return FileStatus::File;
     }
 }
