@@ -3,4 +3,4 @@
 all: group-project
 
 group-project: main.cpp
-	g++ main.cpp -o program.out -std=c++11
+	g++ main.cpp -o program.out -Wall -Wextra -pedantic -std=c++11
