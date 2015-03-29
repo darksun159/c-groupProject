@@ -1,6 +1,6 @@
 #pragma once
-#include <set>
 #include <map>
+#include <vector>
 
 namespace Lounge {
 
@@ -36,7 +36,11 @@ namespace Lounge {
         void checkout(RevisionNumber revision);
 
         // TODO
-        /// Copies the appropriate file to the vcs dir with an incremented number
-        void commit(Path path, RevisionNumber revision);
+        /// Compares the working copy with the last revision
+        std::vector<Path> changedFiles() const;
+
+        // TODO
+        /// Copies the modified files to the vcs dir with an incremented number
+        void commit(std::string message);
     };
 }
